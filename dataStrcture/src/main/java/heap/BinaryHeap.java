@@ -1,3 +1,5 @@
+package heap;
+
 import java.nio.BufferUnderflowException;
 import java.sql.Array;
 import java.util.ArrayList;
@@ -31,7 +33,7 @@ public class BinaryHeap<AnyType extends Comparable<? super AnyType>> {
         array[hole] = x;
     }
 
-    public AnyType findMin() {
+    private AnyType findMin() {
 
         return null;
     }
@@ -48,17 +50,19 @@ public class BinaryHeap<AnyType extends Comparable<? super AnyType>> {
         return minItem;
     }
 
-    public boolean isEmpty() {
-        if (array.length == 0) {
-            return true;
-        } else
-            return false;
+    private boolean isEmpty() {
+//        if (array.length == 0) {
+//            return true;
+//        } else {
+//            return false;
+//        }
+        return array.length == 0;
     }
 
 //    public void makeEmpty() {
 
-    public int currentSize;
-    public AnyType[] array;
+    private int currentSize;
+    private AnyType[] array;
 
 
     //下滤定位多出的元素

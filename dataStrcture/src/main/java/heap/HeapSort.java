@@ -1,3 +1,5 @@
+package heap;
+
 public class HeapSort {
     public void heapsort(int[] previousArray) {
         int size = previousArray.length;
@@ -32,7 +34,7 @@ public class HeapSort {
         array[hole] = tmp;
     }
 
-    public int currentSize;
-    public int[] array;
+    private int currentSize;
+    private int[] array;
 
 }

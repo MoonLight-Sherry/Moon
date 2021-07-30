@@ -1,3 +1,4 @@
+package map;
 
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -6,7 +7,7 @@ import java.util.Map;
 
 public class FindChain {
 
-    public static void FindChain(Map<String, List<String>> adjacentWorlds, String first, String second)
+    public static void findChain(Map<String, List<String>> adjacentWorlds, String first, String second)
 
     {
         Map<String, String> previousWord = new HashMap<String, String>();
